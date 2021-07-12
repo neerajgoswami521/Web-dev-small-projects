@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navigation {
+  font-family: var(--font2);
+  height: 74px;
+  /* background-color: gray; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+.nav span {
+  font-size: 54px;
+  padding-top: 18px;
+}
+.nav-left {
+  font-size: 36px;
+  display: flex;
+}
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font1);
+}
+.nav-left ul li a:hover {
+  color: green;
+  font-weight: bolder;
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+  /* transition: all 0.4s ease-in-out; */
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 75px;
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-right {
+}
+.content-left {
+  font-family: var(--font1);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  /* color: white; */
+}
+.content-left h1 {
+  padding-bottom: 20px;
+  /* color: white; */
+}
+.content-right {
+  /* width: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-right img {
+  height: 270px;
+  border: 1px solid black;
+  border-radius: 280px;
+}
+
+.content {
+  height: 340px;
+  display: flex;
+  margin-top: 30px;
+  padding: 10px;
+  position: relative;
+}
+.content::after {
+  content: "";
+  background-image: url(../Img/13.jpg);
+  position: absolute;
+  width: 100%;
+  height: inherit;
+  opacity: 0.11;
+  border-radius: 10px;
+}
+
+.home-articles {
+  padding-top: 13px;
+  background-color: rgb(248, 239, 239, 0.5);
+  margin-top: 23px;
+}
+.home-article {
+  display: flex;
+  margin: 30px;
+}
+.home-article img {
+  width: 300px;
+  height: 200px;
+}
+.home-article-content {
+  align-self: center;
+  padding: 0 24px;
+}
+.home-article-content a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer {
+  height: 50px;
+  background-color: rgb(211, 138, 211);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.footer a {
+  color: white;
+}

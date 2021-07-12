@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-color: red; */
+    overflow: hidden;
+}
+.gameContainer{
+    background-image: url(bg.jpg) ;
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    width: 100%;
+    height: 100vh;
+}
+.gameOver{
+    top: 45px;
+    font-size: 40px;
+    text-align: center;
+    position: relative;
+    font-family: 'Srisakdi', cursive;
+
+}
+#scoreCont{
+    font-size: 27px;
+    color: rgb(86, 202, 40);
+    font-weight: bolder;
+    position: absolute;
+    right: 45px;
+    top: 32px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: 'Srisakdi', cursive;
+}
+.dino{
+    background-image: url(baby.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130px;
+    width: 120px;
+    position: absolute;
+    bottom: 0;
+    left: 18px;
+}
+
+.Obstacle{
+    background-image: url(dino.png);
+    background-size: cover;
+    width: 200px;
+    height: 105px;
+    bottom: 0;
+    position: absolute;
+    left: 45vw;
+}
+.animateDino{
+    animation: dino 0.6s linear;
+}
+@keyframes dino{
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: 444px;
+
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.ObstacleAni{
+    animation: ObstacleAni 5s linear infinite ;
+}
+@keyframes ObstacleAni{
+    0%{
+        left: 100vw;
+
+    }
+    100%{
+        left: -10vw;
+    }
+}
